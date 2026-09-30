@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructivo: Extrusora - Prysmian</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="video-page">
+
+    <header class="header-video header-animate">
+        <button class="btn-back" onclick="window.location.href='index.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Volver al Menú
+        </button>
+        <h1>Módulo: Extrusora</h1>
+    </header>
+
+    <main class="video-section fade-in">
+        <div class="video-wrapper" id="video-container">
+            <video id="main-video" class="instructive-video" controls>
+                <source src="assets/videos/extrusora_intro.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video local.
+            </video>
+
+            <div id="interactive-layer" class="interactive-overlay">
+                <div class="interactive-content">
+                    <h3>Punto de Decisión / Tip Clave</h3>
+                    <p>Confirme que la temperatura alcanzó el nivel óptimo.</p>
+                    <div class="interactive-buttons">
+                        <button class="btn-action" id="btn-resume">Entendido, continuar</button>
+                        <button class="btn-action btn-secondary" id="btn-help">Ver más detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="btn-test-interaction" class="btn-flotante">Simular Interacción</button>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
